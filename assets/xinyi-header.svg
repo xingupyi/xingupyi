@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="160" viewBox="0 0 440 160" role="img" aria-label="Hi, I am Xinyi!">
+  <title>Hi, I am Xinyi!</title>
+  <style>
+    .name { font: 800 46px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #2F81F7; letter-spacing: -0.5px; }
+    .ink { stroke: #3B2A20; stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
+  </style>
+
+  <!-- Name -->
+  <text class="name" x="20" y="100" textLength="300" lengthAdjust="spacingAndGlyphs" opacity="0">Hi, I am Xinyi!
+    <animate attributeName="opacity" from="0" to="1" dur="0.7s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="0 10" to="0 0" dur="0.7s" fill="freeze"/>
+  </text>
+
+  <!-- Cat: walks in from off-frame right, then stays -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="510 0;372 0" dur="2.4s" calcMode="spline" keySplines="0.25 0.1 0.25 1" fill="freeze"/>
+
+    <!-- soft shadow -->
+    <ellipse cx="0" cy="150" rx="34" ry="5" fill="#000" opacity="0.12"/>
+
+    <!-- walking bob (stops after arrival) -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur="0.3s" repeatCount="8"/>
+
+      <!-- tail -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="-10 26 122;12 26 122;-10 26 122" dur="1.6s" repeatCount="indefinite"/>
+        <path class="ink" d="M26 122 C52 120 58 96 50 82" fill="none" stroke-width="11" stroke="#3B2A20"/>
+        <path d="M26 122 C52 120 58 96 50 82" fill="none" stroke="#F4A259" stroke-width="6.5" stroke-linecap="round"/>
+      </g>
+
+      <!-- feet (step while walking) -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="0 -12 140;-14 -12 140;0 -12 140;14 -12 140;0 -12 140" dur="0.6s" repeatCount="4"/>
+        <ellipse class="ink" cx="-14" cy="142" rx="10" ry="6.5" fill="#F4A259"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="0 12 140;14 12 140;0 12 140;-14 12 140;0 12 140" dur="0.6s" repeatCount="4"/>
+        <ellipse class="ink" cx="14" cy="142" rx="10" ry="6.5" fill="#F4A259"/>
+      </g>
+
+      <!-- body -->
+      <ellipse class="ink" cx="0" cy="112" rx="31" ry="29" fill="#F4A259"/>
+      <ellipse cx="0" cy="118" rx="18" ry="19" fill="#FFE8CC"/>
+
+      <!-- resting arm (left side) -->
+      <ellipse class="ink" cx="-27" cy="116" rx="7" ry="13" fill="#F4A259" transform="rotate(14 -27 116)"/>
+
+      <!-- right arm: hangs down while walking, then raises and waves -->
+      <g>
+        <ellipse class="ink" cx="27" cy="116" rx="7" ry="13" fill="#F4A259" transform="rotate(-14 27 116)"/>
+        <set attributeName="opacity" to="0" begin="2.4s" fill="freeze"/>
+      </g>
+
+      <!-- head -->
+      <path class="ink" d="M-27 52 L-22 20 L-4 38 Z" fill="#F4A259"/>
+      <path class="ink" d="M27 52 L22 20 L4 38 Z" fill="#F4A259"/>
+      <path d="M-22 44 L-19 28 L-10 38 Z" fill="#F7B7B7"/>
+      <path d="M22 44 L19 28 L10 38 Z" fill="#F7B7B7"/>
+      <ellipse class="ink" cx="0" cy="62" rx="33" ry="29" fill="#F4A259"/>
+      <!-- tabby stripes -->
+      <path d="M-6 35 L-4 45 M0 34 L0 45 M6 35 L4 45" stroke="#D9803A" stroke-width="2.5" stroke-linecap="round"/>
+
+      <!-- eyes (blink every 4s) -->
+      <ellipse cx="-12" cy="61" rx="5" ry="6.5" fill="#3B2A20">
+        <animate attributeName="ry" values="6.5;6.5;0.8;6.5" keyTimes="0;0.9;0.95;1" dur="4s" begin="2.6s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="12" cy="61" rx="5" ry="6.5" fill="#3B2A20">
+        <animate attributeName="ry" values="6.5;6.5;0.8;6.5" keyTimes="0;0.9;0.95;1" dur="4s" begin="2.6s" repeatCount="indefinite"/>
+      </ellipse>
+      <circle cx="-10.5" cy="58.5" r="1.8" fill="#fff"/>
+      <circle cx="13.5" cy="58.5" r="1.8" fill="#fff"/>
+
+      <!-- cheeks, nose, mouth -->
+      <ellipse cx="-22" cy="71" rx="5.5" ry="3.5" fill="#F28C8C" opacity="0.6"/>
+      <ellipse cx="22" cy="71" rx="5.5" ry="3.5" fill="#F28C8C" opacity="0.6"/>
+      <path d="M-3 68 L3 68 L0 71.5 Z" fill="#E86A7A"/>
+      <path d="M0 71.5 Q-4 77 -8 74 M0 71.5 Q4 77 8 74" fill="none" stroke="#3B2A20" stroke-width="2" stroke-linecap="round"/>
+      <!-- whiskers -->
+      <path d="M-20 66 L-38 62 M-20 70 L-38 72 M20 66 L38 62 M20 70 L38 72" stroke="#3B2A20" stroke-width="1.4" stroke-linecap="round" opacity="0.7"/>
+
+      <!-- waving arm, drawn in front of the head -->
+      <g opacity="0">
+        <set attributeName="opacity" to="1" begin="2.4s" fill="freeze"/>
+        <g>
+          <animateTransform attributeName="transform" type="rotate" values="0 26 100;-24 26 100;0 26 100" dur="0.6s" begin="2.4s" repeatCount="indefinite"/>
+          <ellipse class="ink" cx="42" cy="84" rx="7.5" ry="17" fill="#F4A259" transform="rotate(42 42 84)"/>
+          <circle class="ink" cx="54" cy="70" r="8" fill="#FFE8CC"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
