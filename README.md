@@ -92,7 +92,7 @@
   </a>
 </p>
 
-## 🗳️ Quick Polls
+## Quick Polls
 
 <!-- POLLS:START -->
 <table>
