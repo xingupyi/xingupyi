@@ -1,0 +1,10 @@
+{
+  "repo": "xingupyi/xingupyi",
+  "questions": [
+    { "id": "coriander", "emoji": "🌿", "text": "Do you like coriander?", "votes": {} },
+    { "id": "pineapple-pizza", "emoji": "🍍", "text": "Pineapple on pizza?", "votes": {} },
+    { "id": "cats-vs-dogs", "emoji": "🐱", "text": "Are cats better than dogs?", "votes": {} },
+    { "id": "hotdog-sandwich", "emoji": "🌭", "text": "Is a hot dog a sandwich?", "votes": {} },
+    { "id": "tabs-spaces", "emoji": "⌨️", "text": "Tabs over spaces?", "votes": {} }
+  ]
+}
