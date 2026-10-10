@@ -1,0 +1,43 @@
+name: Polls
+
+on:
+  issues:
+    types: [opened]
+  workflow_dispatch:   # manual run: redraws the polls after you edit polls.json
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency: polls   # handle one vote at a time so pushes never clash
+
+jobs:
+  vote:
+    if: github.event_name == 'workflow_dispatch' || startsWith(github.event.issue.title, '[Vote]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Count the vote and redraw the README
+        run: python .github/scripts/polls.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md polls.json
+          git diff --staged --quiet || git commit -m "Polls: new vote"
+          git push
+
+      - name: Reply to the voter and close the issue
+        if: github.event_name == 'issues'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMBER: ${{ github.event.issue.number }}
+        run: |
+          gh issue comment "$NUMBER" --repo "$GITHUB_REPOSITORY" --body-file vote_result.md
+          gh issue close "$NUMBER" --repo "$GITHUB_REPOSITORY" --reason completed
