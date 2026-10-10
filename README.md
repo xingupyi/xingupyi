@@ -1,16 +1,102 @@
-## Hi there 👋
+<div align="center">
 
-<!--
-**xingupyi/xingupyi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<!-- Animated typing header. Edit the text after "lines=" (use + for spaces, ; to add a second line) -->
+<img src="./assets/xinyi-header.svg" width="440" alt="Hi, I am Xinyi!" />
 
-Here are some ideas to get you started:
+<p>
+  <a href="https://www.linkedin.com/in/xingupyi/" aria-label="LinkedIn">
+    <img src="https://skillicons.dev/icons?i=linkedin" width="38" height="38" alt="LinkedIn" />
+  </a>
+  &nbsp;
+  <a href="xinyikiki@gmail.com" aria-label="Email me">
+    <img src="https://skillicons.dev/icons?i=gmail" width="38" height="38" alt="Email" />
+</p>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+</div>
+
+## About Me
+<p align="center">
+  <img src="./assets/IMG_0496.jpeg" width="25%" alt="Photo 1" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="./assets/IMG_5465.JPG" width="25%" alt="Photo 2" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="./assets/IMG_9101.JPG" width="25%" alt="Photo 3" />
+</p>
+
+
+<p>
+  Hi! I'm <strong>Xinyi (Kiana)</strong>, a <strong>Y3 Renaissance Engineering Program</strong> student at
+  <strong>Nanyang Technological University</strong>. I enjoy tackling business problems through quantitative
+  data lenses.
+  
+  Outside of work, you'll find me <strong>travelling</strong>
+  or hunting for the best <strong>MALA</strong> in town.
+</p>
+
+<ul>
+  <li>🎓 Currently Studying: <strong>EECS @ UC Berkeley for my year abroad :) </strong> (Graduating <strong>Dec 2028</strong>)</li>
+  <li>🌱 Currently Dabbling: <strong> Workflow Automation with AI Agents, webscraping and Power Automate </strong></li>
+</ul>
+
+
+## Past Projects
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <p><a href="https://github.com/xingupyi/Taobao-User-Behaviour-Analysis"><strong>Project One</strong></a></p>
+      <p>Funnel analysis on Taobao user behaviour using SQL.</p>
+    </td>
+    <td width="50%" valign="top">
+      <p><a href="https://github.com/xingupyi/Plant-Co.-PowerBI-Project"><strong>Project Two</strong></a></p>
+      <p>Designing of data schema and visualisation in PowerBI.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <p><a href="https://github.com/xingupyi/SG-Graduate-Employment-Dashboard"><strong>Project Three</strong></a></p>
+      <p>One sentence on what it does and why it matters.</p>
+    </td>
+    <td width="50%" valign="top">
+      <p><a href="https://github.com/YOU/PROJECT-4"><strong>Project Four</strong></a></p>
+      <p>One sentence on what it does and why it matters.</p>
+    </td>
+  </tr>
+</table>
+
+## Skills
+
+<!-- Full icon list: https://github.com/tandpfun/skill-icons#icons-list -->
+
+### Languages
+
+<p>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=py,mysql,r,ocaml&perline=8" alt="Languages" />
+  </a>
+</p>
+
+### Libraries
+
+<p>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=pytorch,sklearn,selenium,tensorflow&perline=8" alt="Frameworks" />
+  </a>
+</p>
+
+### Tools
+
+<p>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,docker&perline=8" alt="Tools" />
+  </a>
+</p>
+
+## ✍️ Guestbook
+
+<a href="https://github.com/xingupyi/xingupyi/issues/new?template=guestbook.yml">
+  <strong>Sign my guestbook</strong>
+</a> and say hi! 🐱
+
+<!-- GUESTBOOK:START -->
+<!-- GUESTBOOK:END -->
