@@ -92,11 +92,7 @@
   </a>
 </p>
 
-## ✍️ Guestbook
+## 🗳️ Quick Polls
 
-<a href="https://github.com/xingupyi/xingupyi/issues/new?template=guestbook.yml">
-  <strong>Sign my guestbook</strong>
-</a> and say hi! 🐱
-
-<!-- GUESTBOOK:START -->
-<!-- GUESTBOOK:END -->
+<!-- POLLS:START -->
+<!-- POLLS:END -->
